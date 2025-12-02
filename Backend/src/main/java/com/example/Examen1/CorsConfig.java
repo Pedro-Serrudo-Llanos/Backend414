@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOriginPatterns("*") // ngrok, localhost, etc.
+                        .allowedOrigins("https://peppy-kheer-4ac26c.netlify.app") // ngrok, localhost, etc.
                         .allowedMethods("GET","POST","PUT","PATCH","DELETE","OPTIONS")
                         .allowedHeaders("*")
                         .exposedHeaders("*")
